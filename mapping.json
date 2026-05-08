@@ -1,0 +1,17 @@
+{
+  "phone001": {
+    "type": "socks5",
+    "proxy": "1.1.1.1",
+    "port": 1080,
+    "user": "user1",
+    "pass": "pass1"
+  },
+
+  "phone002": {
+    "type": "http",
+    "proxy": "2.2.2.2",
+    "port": 8080,
+    "user": "user2",
+    "pass": "pass2"
+  }
+}

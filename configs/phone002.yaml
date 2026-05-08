@@ -1,0 +1,19 @@
+
+mixed-port: 7890
+
+proxies:
+  - name: STATIC
+    type: http
+    server: 2.2.2.2
+    port: 8080
+    username: user2
+    password: pass2
+
+proxy-groups:
+  - name: AUTO
+    type: select
+    proxies:
+      - STATIC
+
+rules:
+  - MATCH,AUTO

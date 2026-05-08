@@ -1,0 +1,19 @@
+
+mixed-port: 7890
+
+proxies:
+  - name: STATIC
+    type: socks5
+    server: 1.1.1.1
+    port: 1080
+    username: user1
+    password: pass1
+
+proxy-groups:
+  - name: AUTO
+    type: select
+    proxies:
+      - STATIC
+
+rules:
+  - MATCH,AUTO
