@@ -3,11 +3,12 @@ mixed-port: 7890
 
 proxies:
   - name: STATIC
-    type: socks5
-    server: 1.1.1.1
+    type: "socks5"
+    server: "1.1.1.1"
     port: 1080
-    username: user1
-    password: pass1
+    username: "user1"
+    password: "pass1"
+    udp: false
 
 proxy-groups:
   - name: AUTO

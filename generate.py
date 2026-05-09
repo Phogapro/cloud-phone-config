@@ -9,11 +9,12 @@ mixed-port: 7890
 
 proxies:
   - name: STATIC
-    type: {type}
-    server: {proxy}
+    type: "{type}"
+    server: "{proxy}"
     port: {port}
-    username: {user}
-    password: {password}
+    username: "{user}"
+    password: "{password}"
+    udp: false
 
 proxy-groups:
   - name: AUTO
@@ -37,7 +38,7 @@ for device, cfg in data.items():
         password=cfg["pass"]
     )
 
-    with open(f"configs/{device}.yaml", "w") as f:
+    with open(f"configs/{device}.yaml", "w", encoding="utf-8") as f:
         f.write(yaml_content)
 
 print("DONE")

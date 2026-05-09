@@ -3,11 +3,12 @@ mixed-port: 7890
 
 proxies:
   - name: STATIC
-    type: http
-    server: 210.245.34.106
+    type: "http"
+    server: "210.245.34.106"
     port: 50562
-    username: aucr
-    password: b8xl
+    username: "aucr"
+    password: "b8xl"
+    udp: false
 
 proxy-groups:
   - name: AUTO
