@@ -7,11 +7,11 @@
     "pass": "pass1"
   },
 
-  "phone002": {
+  "PhoneB2": {
     "type": "http",
-    "proxy": "2.2.2.2",
-    "port": 8080,
-    "user": "user2",
-    "pass": "pass2"
+    "proxy": "210.245.34.106",
+    "port": 50562,
+    "user": "aucr",
+    "pass": "b8xl"
   }
 }
