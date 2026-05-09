@@ -1,13 +1,17 @@
 
 mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
 
 proxies:
   - name: STATIC
-    type: http
-    server: 2.2.2.2
-    port: 8080
-    username: user2
-    password: pass2
+    type: "socks5"
+    server: "1.1.1.1"
+    port: 1080
+    username: "user1"
+    password: "pass1"
+    udp: false
 
 proxy-groups:
   - name: AUTO

@@ -7,6 +7,14 @@
     "pass": "pass1"
   },
 
+ "phone002": {
+    "type": "socks5",
+    "proxy": "1.1.1.1",
+    "port": 1080,
+    "user": "user1",
+    "pass": "pass1"
+  },
+
   "PhoneB2": {
     "type": "http",
     "proxy": "210.245.34.106",
